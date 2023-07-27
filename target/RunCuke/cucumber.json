@@ -1,0 +1,286 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 325025900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on homepage",
+            "match": {
+              "location": "TopMenuSteps.userIsOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 933068400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I accept cookies",
+            "match": {
+              "location": "TopMenuSteps.iAcceptCookies()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 15113812400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "User can not login with invalid credentials",
+        "description": "",
+        "id": "login-functionality;user-can-not-login-with-invalid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 721553500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 223714100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User click on login button",
+            "match": {
+              "location": "TopMenuSteps.userClickOnLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1822673300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enter username \"Maitri\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Maitri",
+                  "offset": 21
+                }
+              ],
+              "location": "TopMenuSteps.userEnterUsername(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 485306500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User enter password \"Maitri@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Maitri@123",
+                  "offset": 21
+                }
+              ],
+              "location": "TopMenuSteps.userEnterPassword(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1079815300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User click on login tab",
+            "match": {
+              "location": "TopMenuSteps.userClickOnLoginTab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2185213400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User login not success with message \"Incorrect username or password entered. Please try again\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Incorrect username or password entered. Please try again",
+                  "offset": 37
+                }
+              ],
+              "location": "TopMenuSteps.userLoginNotSuccessWithMessage(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login functionality",
+    "description": "As a User I want to test Login functions.",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 45500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on homepage",
+            "match": {
+              "location": "TopMenuSteps.userIsOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1402265900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I accept cookies",
+            "match": {
+              "location": "TopMenuSteps.iAcceptCookies()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9481767800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "User can see all options in Top menu of Homepage",
+        "description": "",
+        "id": "top-menu-test;user-can-see-all-options-in-top-menu-of-homepage",
+        "after": [
+          {
+            "result": {
+              "duration": 907276400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2412489000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User can see all option on TopMenuBar",
+            "match": {
+              "location": "TopMenuSteps.userCanSeeAllOptionOnTopMenuBar(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "options"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "Sports"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "In:play"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "Casino"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "Live Casino"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "Virtual Sports"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "Promotions"
+                ],
+                "line": 16
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Top Menu Test",
+    "description": "As a user I want to test TopMenu",
+    "id": "top-menu-test",
+    "keyword": "Feature",
+    "uri": "TopMenu.feature"
+  }
+]
